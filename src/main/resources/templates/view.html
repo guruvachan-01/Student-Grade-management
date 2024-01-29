@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="result" style="display: flex; background: rgb(192, 192, 192); justify-content: center; margin-left: 300px; height: 560px; border: 4px solid darkblue; width: 600px;">
+	<div class="card">
+		<h3 style="text-align: center;">Student Result </h3>
+		<table border="4px" style="width: 500px; height: 400px;">
+			<tr>
+				<th>Roll No:</th>
+				<th colspan="3">Student Name:</th>
+				
+				
+			</tr>
+			
+			<tr>
+				<td style="text-align: center;">[[${res.rollno}]]</td>
+				<td colspan="3" style="text-align: center;">[[${res.name}]]</td>
+			</tr>
+			<tr>
+				<th style="width: 64px;">Sr No.</th>
+				<th>Subjects</th>
+				<th>Marks</th>
+				<th>Grade</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Hindi</td>
+				<td>[[${res.hindi}]]</td>
+				<td>[[${res.grade}]]</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>English</td>
+				<td>[[${res.english}]]</td>
+				<td>[[${res.grade}]]</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mathematics</td>
+				<td>[[${res.math}]]</td>
+				<td>[[${res.grade}]]</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Physics</td>
+				<td>[[${res.phy}]]</td>
+				<td>[[${res.grade}]]</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Chemistry</td>
+				<td>[[${res.chem}]]</td>
+				<td>[[${res.grade}]]</td>
+				
+			</tr>
+			<tr>
+				<th colspan="4">Total Percentage(%) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  = [[${res.percentag}]]</th>
+			</tr>
+			  
+		</table>
+	</div>
+</div>
+</div>
+</body>
+</html>
